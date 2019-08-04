@@ -10,6 +10,10 @@
 		1BF69EED22F4C88E0010C5D6 /* MoonStone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF69EE322F4C88E0010C5D6 /* MoonStone.framework */; };
 		1BF69EF222F4C88E0010C5D6 /* MoonStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF69EF122F4C88E0010C5D6 /* MoonStoneTests.swift */; };
 		1BF69EF422F4C88E0010C5D6 /* MoonStone.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF69EE622F4C88E0010C5D6 /* MoonStone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BF69EFE22F4CB8F0010C5D6 /* MoonStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF69EFD22F4CB8F0010C5D6 /* MoonStone.swift */; };
+		1BF69F0022F6D8DC0010C5D6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF69EFF22F6D8DC0010C5D6 /* Log.swift */; };
+		59AF5657DB47ED90E31804F6 /* Pods_MoonStone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF7CC91F8CF11B331F865A3 /* Pods_MoonStone.framework */; };
+		F6B8497B8AB15090CA6022DD /* Pods_MoonStoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D395424DB3AB7B708F2D0F /* Pods_MoonStoneTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,14 @@
 		1BF69EEC22F4C88E0010C5D6 /* MoonStoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonStoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF69EF122F4C88E0010C5D6 /* MoonStoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonStoneTests.swift; sourceTree = "<group>"; };
 		1BF69EF322F4C88E0010C5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF69EFD22F4CB8F0010C5D6 /* MoonStone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonStone.swift; sourceTree = "<group>"; };
+		1BF69EFF22F6D8DC0010C5D6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		4AF7CC91F8CF11B331F865A3 /* Pods_MoonStone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonStone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		587C2B00B1B49A163E7E1D30 /* Pods-MoonStoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonStoneTests.debug.xcconfig"; path = "Target Support Files/Pods-MoonStoneTests/Pods-MoonStoneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65D395424DB3AB7B708F2D0F /* Pods_MoonStoneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoonStoneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C5B635CC9F6BC164C5F722 /* Pods-MoonStone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonStone.debug.xcconfig"; path = "Target Support Files/Pods-MoonStone/Pods-MoonStone.debug.xcconfig"; sourceTree = "<group>"; };
+		C52BDE03B558EABD2F4DB8D0 /* Pods-MoonStoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonStoneTests.release.xcconfig"; path = "Target Support Files/Pods-MoonStoneTests/Pods-MoonStoneTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6AA2127F85EE79A710B5C01 /* Pods-MoonStone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoonStone.release.xcconfig"; path = "Target Support Files/Pods-MoonStone/Pods-MoonStone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AF5657DB47ED90E31804F6 /* Pods_MoonStone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +57,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BF69EED22F4C88E0010C5D6 /* MoonStone.framework in Frameworks */,
+				F6B8497B8AB15090CA6022DD /* Pods_MoonStoneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029A0F5EBEBA94E329CDA2F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79C5B635CC9F6BC164C5F722 /* Pods-MoonStone.debug.xcconfig */,
+				D6AA2127F85EE79A710B5C01 /* Pods-MoonStone.release.xcconfig */,
+				587C2B00B1B49A163E7E1D30 /* Pods-MoonStoneTests.debug.xcconfig */,
+				C52BDE03B558EABD2F4DB8D0 /* Pods-MoonStoneTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1BF69ED922F4C88E0010C5D6 = {
 			isa = PBXGroup;
 			children = (
 				1BF69EE522F4C88E0010C5D6 /* MoonStone */,
 				1BF69EF022F4C88E0010C5D6 /* MoonStoneTests */,
 				1BF69EE422F4C88E0010C5D6 /* Products */,
+				029A0F5EBEBA94E329CDA2F3 /* Pods */,
+				DC6C97C9EA8974435F5E3C11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +101,8 @@
 			children = (
 				1BF69EE622F4C88E0010C5D6 /* MoonStone.h */,
 				1BF69EE722F4C88E0010C5D6 /* Info.plist */,
+				1BF69EFD22F4CB8F0010C5D6 /* MoonStone.swift */,
+				1BF69EFF22F6D8DC0010C5D6 /* Log.swift */,
 			);
 			path = MoonStone;
 			sourceTree = "<group>";
@@ -84,6 +114,15 @@
 				1BF69EF322F4C88E0010C5D6 /* Info.plist */,
 			);
 			path = MoonStoneTests;
+			sourceTree = "<group>";
+		};
+		DC6C97C9EA8974435F5E3C11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AF7CC91F8CF11B331F865A3 /* Pods_MoonStone.framework */,
+				65D395424DB3AB7B708F2D0F /* Pods_MoonStoneTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BF69EF722F4C88E0010C5D6 /* Build configuration list for PBXNativeTarget "MoonStone" */;
 			buildPhases = (
+				A38FA5AB17371A679E7AD706 /* [CP] Check Pods Manifest.lock */,
 				1BF69EDE22F4C88E0010C5D6 /* Headers */,
 				1BF69EDF22F4C88E0010C5D6 /* Sources */,
 				1BF69EE022F4C88E0010C5D6 /* Frameworks */,
@@ -122,6 +162,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BF69EFA22F4C88E0010C5D6 /* Build configuration list for PBXNativeTarget "MoonStoneTests" */;
 			buildPhases = (
+				554CF58017FAA21836401ECB /* [CP] Check Pods Manifest.lock */,
 				1BF69EE822F4C88E0010C5D6 /* Sources */,
 				1BF69EE922F4C88E0010C5D6 /* Frameworks */,
 				1BF69EEA22F4C88E0010C5D6 /* Resources */,
@@ -148,6 +189,7 @@
 				TargetAttributes = {
 					1BF69EE222F4C88E0010C5D6 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					1BF69EEB22F4C88E0010C5D6 = {
 						CreatedOnToolsVersion = 10.3;
@@ -189,11 +231,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		554CF58017FAA21836401ECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoonStoneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A38FA5AB17371A679E7AD706 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoonStone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BF69EDF22F4C88E0010C5D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF69EFE22F4CB8F0010C5D6 /* MoonStone.swift in Sources */,
+				1BF69F0022F6D8DC0010C5D6 /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +431,9 @@
 		};
 		1BF69EF822F4C88E0010C5D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C5B635CC9F6BC164C5F722 /* Pods-MoonStone.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.remysanfeliu.MoonStone;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,7 +458,9 @@
 		};
 		1BF69EF922F4C88E0010C5D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6AA2127F85EE79A710B5C01 /* Pods-MoonStone.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -388,7 +484,9 @@
 		};
 		1BF69EFB22F4C88E0010C5D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 587C2B00B1B49A163E7E1D30 /* Pods-MoonStoneTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoonStoneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -405,7 +503,9 @@
 		};
 		1BF69EFC22F4C88E0010C5D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52BDE03B558EABD2F4DB8D0 /* Pods-MoonStoneTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoonStoneTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
